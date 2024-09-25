@@ -1,0 +1,57 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos del menú */
+.menu {
+  background-color: #e64f4f;
+  padding: 10px;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Media queries para el menú */
+@media (max-width: 768px) {
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+}
+
+/* Estilos del contenido principal */
+.contenido {
+  padding: 20px;
+  min-height: calc(
+    100vh - 160px
+  ); /* Ajusta esto según la altura de tu menú y footer */
+}
+
+/* Estilos adicionales del footer */
+.footer {
+  background-color: #e64f4f;
+  color: white;
+  padding: 20px 0;
+}
